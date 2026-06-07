@@ -35,13 +35,13 @@ fᵢ* = fᵢ - (fᵢ - fᵢᵉᵠ)/τ
 
 ## Velocity Field
 
-![Velocity Field](velocity_field.png)
+![Velocity Field](Poiseulle_Velocity_Field.png)
 
 ---
 
 ## Density Contour
 
-![Density Contour](density_contour.png)
+![Density Contour](Poiseulle_Density_Contour.png)
 
 ---
 
