@@ -14,6 +14,28 @@ The GZS implementation uses the second version from `MADAL_v2` and is included h
 
 Among the three tested boundary treatments, GZS was identified as the most accurate scheme.
 
+## 10,000 Iteration Results
+
+The plots below were generated after running each scheme for 10,000 iterations.
+
+### FH Scheme
+
+![FH Scheme Velocity Field](FH_Scheme_Velocity_Field.png)
+
+![FH Scheme Density Field](FH_Scheme_Density_Field.png)
+
+### MLS Scheme
+
+![MLS Scheme Velocity Field](MLS_Scheme_Velocity_Field.png)
+
+![MLS Scheme Density Field](MLS_Scheme_Density_Field.png)
+
+### GZS Scheme
+
+![GZS Scheme Velocity Field](GZS_Scheme_Velocity_Field.png)
+
+![GZS Scheme Density Field](GZS_Scheme_Density_Field.png)
+
 ## Included Schemes
 
 ### FH Scheme
