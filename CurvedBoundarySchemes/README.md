@@ -32,9 +32,7 @@ The plots below were generated after running each scheme for 10,000 iterations.
 
 ### GZS Scheme
 
-![GZS Scheme Velocity Field](GZS_Scheme_Velocity_Field.png)
-
-![GZS Scheme Density Field](GZS_Scheme_Density_Field.png)
+![GZS V2 Velocity Magnitude and Wake](GZS_V2_Velocity_Magnitude_Wake.png)
 
 ## Included Schemes
 
