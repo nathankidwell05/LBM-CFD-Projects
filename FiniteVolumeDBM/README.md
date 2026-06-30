@@ -2,7 +2,7 @@
 
 ## Description
 
-This project implements a D2Q9 finite-volume discrete Boltzmann method (FVDBM) for the lid-driven cavity flow benchmark at Reynolds number 100. The MATLAB solver uses cell-centered control volumes, first-order upwind face fluxes, BGK collision, and non-equilibrium extrapolation at the cavity walls.
+This project implements the author's original D2Q9 finite-volume discrete Boltzmann method (FVDBM) for the lid-driven cavity flow benchmark at Reynolds number 100. The MATLAB solver uses cell-centered control volumes, first-order upwind face fluxes, BGK collision, and non-equilibrium extrapolation at the cavity walls.
 
 Features:
 - D2Q9 discrete velocity model
@@ -31,12 +31,12 @@ u = sum(f_i xi_i) / rho
 The default case uses:
 
 - Reynolds number: `Re = 100`
-- Grid: `81 x 81` control volumes
-- Lid velocity: `U_lid = 0.1`
-- Maximum iterations: `100000`
-- Convergence tolerance: `1e-8`
+- Domain length: `L = 100`
+- Grid: `100 x 100` control volumes
+- Lid velocity: `U_lid = 0.1333`
+- Iterations: `50000`
 
-The saved case converged after 61,000 iterations with a final velocity residual of approximately `7.2e-9`. Mean absolute centerline errors relative to Ghia et al. are `0.0217` for `u/U_lid` and `0.0231` for `v/U_lid`.
+The saved case completed 50,000 iterations in approximately 3,697 seconds with a final 1,000-step velocity residual of `4.77e-4`. Mean absolute centerline errors relative to Ghia et al. are `0.01882` for `u/U_lid` and `0.02196` for `v/U_lid`.
 
 ## Results
 
@@ -63,6 +63,8 @@ The saved case converged after 61,000 iterations with a final velocity residual 
 ## Files
 
 - `FVBDM_v2.m`
+- `eqm_d2q9.m`
+- `moment_rho_u_d2q9.m`
 - `FVBDM_results.mat`
 - `velocity_magnitude.png`
 - `velocity_vectors.png`
